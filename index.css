@@ -4,7 +4,7 @@
 
 #gh-index .header { padding: .2em .3em; line-height: 3em; }
 
-#gh-index .header span { position: relative; top: -3px; color: #333; font-size: 14px; }
+#gh-index .header span { position: relative; top: -3px; color: #777; font-size: 14px; }
 
 #gh-index .uplink { font-size: 18px; color: #777; font-weight: bold; }
 
@@ -12,9 +12,9 @@
 
 #gh-index .uplink:hover span { padding-left: 9px; }
 
-#gh-index ul { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #efefef; }
+#gh-index ul { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #EFEFEF; }
 
-#gh-index li { border-top: 1px solid #efefef; }
+#gh-index li { border-top: 1px solid #EFEFEF; }
 
 #gh-index li a { padding-left: .3em; display: block; line-height: 2em; }
 
