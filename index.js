@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', function () {
     updateIndexies: function updateIndexies(tree) {
       // generate header html
       var path = window.location.hash.replace('#', '');
-      var header = '<div class="header"><span>•_•</span></div>';
+      var header = '<div class="header"><span>•Build_Version•</span></div>';
       var parentLink = '#' + path.replace(/[^/]+\/$/, '');
       if (path) {
         header = '<div class="header"><a class="uplink" href="' + parentLink + '">' + (path + '<span>←_←</span></a></div>');
