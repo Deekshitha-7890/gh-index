@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * gh-index
  * An directory index for gh-pages.
@@ -142,10 +144,10 @@ window.addEventListener('DOMContentLoaded', function () {
     updateIndexies: function updateIndexies(tree) {
       // generate header html
       var path = window.location.hash.replace('#', '');
-      var header = '<div class="header"><span>Build_Versions</span></div>';
+      var header = '<div class="header"><span>•_•</span></div>';
       var parentLink = '#' + path.replace(/[^/]+\/$/, '');
       if (path) {
-        header = '<div class="header"><a class="uplink" href="' + parentLink + '">' + (path + '<span>(previous)</span></a></div>');
+        header = '<div class="header"><a class="uplink" href="' + parentLink + '">' + (path + '<span>←_←</span></a></div>');
       }
 
       // generate list html
@@ -167,6 +169,9 @@ window.addEventListener('DOMContentLoaded', function () {
         return str;
       }).join('');
       var list = '<ul>' + items + '</ul>';
+
+      // Generate footer html
+      var footer = '<div class="footer">' + '<a href="http://github.com/amio/gh-index">gh-index</a> ' + 'by <a href="http://github.com/amio">amio</a></div>';
 
       // insert html
       wrapper.innerHTML = header + list + footer;
