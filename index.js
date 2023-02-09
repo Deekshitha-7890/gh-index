@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       
       // insert html
-      wrapper.innerHTML = header + list + footer;
+      wrapper.innerHTML = header + list;
     }
   };
 
