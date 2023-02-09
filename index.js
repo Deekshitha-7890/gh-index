@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * gh-index
  * An directory index for gh-pages.
@@ -169,9 +167,6 @@ window.addEventListener('DOMContentLoaded', function () {
         return str;
       }).join('');
       var list = '<ul>' + items + '</ul>';
-
-      // Generate footer html
-      var footer = '<div class="footer">' + '<a href="http://github.com/amio/gh-index">gh-index</a> ' + 'by <a href="http://github.com/amio">amio</a></div>';
 
       // insert html
       wrapper.innerHTML = header + list + footer;
